@@ -1,6 +1,6 @@
-# Corrida Aleatória
+# Disputa Aleatória
+Disputa (joguinho) para "tirar a sorte" entre duas pessoas.
 ---
-Joguinho para "tirar a sorte" entre duas pessoas.
----
-Dois participantes, cada um identificado por um NÚMERO.
-Aquele que atingir 10 pontos primeiro, através de SORTEIO, vence!
+Há dois participantes e cada um é identificado por um NÚMERO;
+Um participante é SORTEADO por rodada, ganhando 1 ponto;
+Aquele que atingir 10 pontos primeiro, VENCE!
