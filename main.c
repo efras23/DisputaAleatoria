@@ -1,15 +1,9 @@
-/*
-    DOAÇÃO DE ANIMAIS vs VENDA DE PRODUTOS
-        Ganha o que chegar em 10 primeiro.
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
 
 void mostrar_placar(int * pts_doacao_animais, int * pts_venda_produtos); //mostrar o placar (resultado)
 void mostrar_placar_final(int * pts_doacao_animais, int * pts_venda_produtos);
-//void sorteador(int * pts_doacao_animais, int * pts_venda_produtos, int * num_sorteado);
 
 //---
 
@@ -61,34 +55,21 @@ int main(int argc, char * argv[]){
 
 void mostrar_placar(int * pts_doacao_animais, int * pts_venda_produtos){
     system("cls");
-    printf("QUAL SISTEMA?\n\n");
-    printf("\t1. DOACAO DE ANIMAIS: %d\n", *pts_doacao_animais);
-    printf("\t2. VENDA DE PRODUTOS: %d\n", *pts_venda_produtos);
+    printf("QUEM GANHA?\n\n");
+    printf("\tPARTICIPANTE 1: %d\n", *pts_doacao_animais);
+    printf("\tPARTICIPANTE 2: %d\n", *pts_venda_produtos);
 }
 
 void mostrar_placar_final(int * pts_doacao_animais, int * pts_venda_produtos){
     system("cls");
-    printf("QUAL SISTEMA?\n\n");
+    printf("QUEM GANHA?\n\n");
     
     if(*pts_doacao_animais == 10){
-        printf("\t1. DOACAO DE ANIMAIS: %d [VENCEDOR!]\n", *pts_doacao_animais);
-        printf("\t2. VENDA DE PRODUTOS: %d\n", *pts_venda_produtos);
+        printf("\tPARTICIPANTE 1: %d [VENCEDOR!]\n", *pts_doacao_animais);
+        printf("\tPARTICIPANTE 2: %d\n", *pts_venda_produtos);
     } else {
-        printf("\t1. DOACAO DE ANIMAIS: %d\n", *pts_doacao_animais);
-        printf("\t2. VENDA DE PRODUTOS: %d [VENCEDOR]\n", *pts_venda_produtos);
+        printf("\tPARTICIPANTE 1: %d\n", *pts_doacao_animais);
+        printf("\tPARTICIPANTE 2: %d [VENCEDOR]\n", *pts_venda_produtos);
     }
     printf("\n");
 }
-
-/*
-void sorteador(int * pts_doacao_animais, int * pts_venda_produtos, int * num_sorteado){
-    do{
-        *num_sorteado = rand() % 3;
-        if(*num_sorteado == 1){
-            *pts_doacao_animais++;
-        } else if(*num_sorteado == 2){
-            *pts_venda_produtos++;
-        }
-    }while(*num_sorteado == 0);
-}
-*/
